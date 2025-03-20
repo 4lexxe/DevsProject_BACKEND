@@ -8,13 +8,13 @@
     "strict": true,
     "skipLibCheck": true,
     "outDir": "./dist",
-    "rootDir": ".",
+    "rootDir": "./src",
     "typeRoots": ["./node_modules/@types", "./types"],
-    "types": ["express", "node"]
+    "types": ["express", "node"],
+    "allowJs": false,
+    "resolveJsonModule": true,
+    "sourceMap": true
   },
-  "include": [
-    "./**/*",
-    "types/**/*"
-  ],
+  "include": ["src/**/*", "types/**/*"],
   "exclude": ["node_modules", "dist"]
 }
